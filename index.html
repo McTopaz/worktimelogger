@@ -8,7 +8,22 @@
 </head>
 <body>
     <h1>WorkTimeLogger</h1>
-    <p>Enkel app för att logga arbetstid. Test.</p>
+
+    <form id="worktime-form">
+        <label for="work-date">Välj datum:</label>
+        <input type="date" id="work-date" required>
+
+        <label for="start-time">Starttid:</label>
+        <input type="time" id="start-time" required>
+
+        <label for="stop-time">Stopptid:</label>
+        <input type="time" id="stop-time" required>
+
+        <button type="submit">Beräkna arbetstid</button>
+    </form>
+
+    <p id="result"></p>
+
     <script src="script.js"></script>
 </body>
 </html>
